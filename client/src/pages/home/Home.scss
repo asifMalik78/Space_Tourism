@@ -1,0 +1,38 @@
+$background-image-path-desktop: "https://res.cloudinary.com/dqd3qwk2a/image/upload/v1685195809/assets/home/home-desktop.jpg";
+$background-image-path-mobile: "https://res.cloudinary.com/dqd3qwk2a/image/upload/v1685195807/assets/home/home-mobile.jpg";
+$background-image-path-tablet: "https://res.cloudinary.com/dqd3qwk2a/image/upload/v1685195808/assets/home/home-tablet.jpg";
+
+.Home-Container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url($background-image-path-desktop);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media screen and (max-width: 768px) {
+    background-image: url($background-image-path-tablet);
+    background-size: cover;
+    width: 100vw;
+  }
+
+  @media screen and (max-width: 375px) {
+    background-image: url($background-image-path-mobile);
+    background-size: cover;
+    width: 100vw;
+  }
+  main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      height: 100vh;
+      overflow-y: scroll;
+    }
+
+    @media screen and (max-width: 475px) {
+      overflow-x: hidden;
+    }
+  }
+}

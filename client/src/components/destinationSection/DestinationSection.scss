@@ -1,0 +1,225 @@
+.title {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 76px 0 0 128px;
+  @media screen and (max-width: 768px) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+  }
+
+  @media screen and (max-width: 475px) {
+    margin: 0 !important;
+    margin-top: 15px !important;
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  span {
+    font-weight: 700;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    margin-right: 28px;
+  }
+}
+
+.destination-container {
+  margin: 45px 120px 131px 134px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 157px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    gap: 60px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 475px) {
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+  }
+  .destination-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    .image-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .image-wrapper {
+        height: 380px;
+        width: 380px;
+        margin-left: 38px;
+        @media screen and (max-width: 768px) {
+          height: 290px;
+          width: 290px;
+          margin: 0;
+        }
+        @media screen and (max-width: 475px) {
+          height: 220px;
+          width: 220px;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .destination-right {
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    nav {
+      width: 285px;
+      height: 34px;
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      margin-bottom: 37px;
+      @media screen and (max-width: 475px) {
+        justify-content: center;
+        gap: 25px;
+        margin-bottom: 20px;
+      }
+      .nav-options {
+        font-family: "Barlow Condensed";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        color: #d0d6f9;
+        padding-bottom: 4px;
+        border-bottom: 3px solid transparent;
+        cursor: pointer;
+
+        &:hover {
+          border-bottom: 3px solid #8a8b90;
+        }
+      }
+
+      .nav-active {
+        border-bottom: 3px solid #ffffff;
+        &:hover {
+          border-bottom: 3px solid #ffffff;
+        }
+      }
+    }
+
+    .right-title {
+      font-family: "Bellefair";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 100px;
+      line-height: 115px;
+      color: #ffffff;
+      text-transform: uppercase;
+      @media screen and (max-width: 768px) {
+        font-size: 80px;
+        line-height: 92px;
+        text-align: center;
+      }
+
+      @media screen and (max-width: 475px) {
+        font-size: 56px;
+        line-height: 64px;
+        text-align: center;
+      }
+    }
+
+    .desc {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 32px;
+      color: #d0d6f9;
+      padding-bottom: 54px;
+      border-bottom: 2px solid #383b4b;
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+      }
+
+      @media screen and (max-width: 475px) {
+        padding: 30px 20px;
+        padding-top: 10px;
+        font-size: 14px;
+        line-height: 25px;
+        text-align: center;
+      }
+    }
+
+    .dist-days-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 79px;
+      @media screen and (max-width: 475px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 30px;
+      }
+      .dist {
+        margin-top: 28px;
+        .heading {
+          font-family: "Barlow Condensed";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: 2.3625px;
+          text-transform: uppercase;
+          color: #d0d6f9;
+          @media screen and (max-width: 475px) {
+            text-align: center;
+            margin-bottom:10px;
+          }
+        }
+
+        div {
+          font-family: "Bellefair";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 28px;
+          line-height: 32px;
+          color: #ffffff;
+          text-transform: capitalize;
+          @media screen and (max-width: 475px) {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

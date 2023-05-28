@@ -1,0 +1,37 @@
+$background-image-path-desktop: "https://res.cloudinary.com/dqd3qwk2a/image/upload/v1685196495/assets/technology/technology-desktop.jpg";
+$background-image-path-mobile: "https://res.cloudinary.com/dqd3qwk2a/image/upload/v1685196495/assets/technology/technology-mobile.jpg";
+$background-image-path-tablet: "https://res.cloudinary.com/dqd3qwk2a/image/upload/v1685196495/assets/technology/technology-tablet.jpg";
+
+.Technology-Container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url($background-image-path-desktop);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media screen and (max-width: 768px) {
+    background-image: url($background-image-path-tablet);
+    background-size: cover;
+  }
+
+  @media screen and (max-width: 375px) {
+    background-image: url($background-image-path-mobile);
+    background-size: cover;
+    width: 100vw;
+  }
+  main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      padding-bottom: 10px;
+      overflow-y: scroll;
+    }
+
+    @media screen and (max-width: 475px) {
+      overflow-x: hidden;
+    }
+  }
+}
